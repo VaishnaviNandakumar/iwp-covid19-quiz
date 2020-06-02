@@ -3,8 +3,7 @@
 ?>
 
 <main> 
-<p>Logged Out!</p>
-<p>Logged In!</p>
+
 </main>
 
 <?php
