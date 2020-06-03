@@ -7,32 +7,23 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" href = "style.css">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Nunito:wght@300;400&display=swap" rel="stylesheet">
+    <title>Home</title>
 </head>
 <body>
     
 <header>
-    <nav>
-        <ul>
-        <li><a href = "index.php">Home</a></li>
-        <li><a href = "#">Portfolio</a></li>
-        <li><a href = "#">About</a></li>
-        <li><a href = "#">Contact</a></li>
-        </ul>
-    </nav>
-
-
-    <div>
+   <body>
+    <div class = "content">
+       <h2>COVID-19 PRELIMINARY TESTING PORTAL</h2>
         <form action = "includes/login.inc.php" method =  "post">
-            <input type = "text" name = "mailuid" placeholder = "Username/Email">
-            <input type = "password" name = "pwd" placeholder = "Password">
-            <button type = "submit"  name = "login-submit">Login</button>
+            <input type = "text" name = "mailuid" placeholder = "Username/Email"><br>
+            <input type = "password" name = "pwd" placeholder = "Password"><br>
+            <button type = "submit"  name = "login-submit">LOGIN</button>
         </form>
-
-        <a href = "signup.php">Sign Out </a>
-        <form action = "includes/logout.inc.php" method =  "post">
-            <button type = "submit"  name = "logout-submit">Logout</button>
-        </form>
-
+        <br>
+        Not a member yet? <a href = "signup.php"> Sign Up! </a>
+        
     </div>
+    </body>
 </header>
