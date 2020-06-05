@@ -95,8 +95,8 @@ img{
 
 #resultval{
     border: 2px solid red;
-    margin-left: 15%;
-    margin-top: 2%;
+    
+    margin-top: -25%;
     padding: 20px;
     text-align: center;
     box-shadow: 2px 2px 4px black;
