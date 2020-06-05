@@ -14,7 +14,7 @@ session_start();
 <main>
 <div class = "content2">
     <section>
-    <h1>SignUp</h1>
+    <h1>Sign Up</h1>
     <form action = "includes/signup.inc.php" method = "post" class = "formnew">
     <input type = "text" name = "uid" placeholder = "Username">
     <input type = "text" name = "mail" placeholder = "E-mail">

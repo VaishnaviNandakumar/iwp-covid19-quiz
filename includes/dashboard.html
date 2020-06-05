@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Nunito:wght@300;400&display=swap" rel="stylesheet">
+    <title>Home</title>
+</head>
+<body>
+    <div class = "container">
+    <h1>Welcome!</h1>    
+    This is a preliminary testing platform to help you with the right medical attention regarding COVID-19. <br> Please relax and provide the answers for the quiz honestly.<br> This test will show if you need to seek further medical attention or not. Thank you for your cooperation.
+    <img src = "../23mplead1.jpg">
+    <div id ="quiz">
+    <div class = "question">Choose your age category
+        <br>
+        <input type="radio" id="11"  value=1 class="mcq">0-20
+        <input type="radio" id="a2"  value=2 class="mcq">20-45
+        <input type="radio" id="a3"  value=3 class="mcq">45 >
+    </div>
+
+    <div class = "question">Do you experience headaches or chills?
+        <br>
+        <input type="radio" id="b1"  value=1 class="mcq">Less Frequent
+        <input type="radio" id="b2"  value=2 class="mcq">Occasionally
+        <input type="radio" id="b3"  value=3 class="mcq">Very Frequent
+    </div>
+    
+    <div class = "question">Do you have a new loss of taste or smell?
+        <br>
+        <input type="radio" id="c1"  value=1 class="mcq">No
+        <input type="radio" id="c2"  value=2 class="mcq">Maybe
+        <input type="radio" id="c3"  value=3 class="mcq">Yes
+    </div>
+
+    <div class = "question">Rate the intensity of muscles or body aches
+        <br>
+        <input type="radio" id="d1"  value=1 class="mcq">Not Much
+        <input type="radio" id="d2"  value=2 class="mcq">Normal
+        <input type="radio" id="d3"  value=3 class="mcq">Painful
+    </div>
+
+    <div class = "question">Rate the intensity of nausea or vomiting
+        <br>
+        <input type="radio" id="e1"  value=1 class="mcq">Not intense
+        <input type="radio" id="e2"  value=2 class="mcq">Moderate
+        <input type="radio" id="e3"  value=3 class="mcq">Very Intense
+    </div>
+    <div class = "question">Do you experience shortness of breath or difficulty breathing?
+        <br>
+        <input type="radio" id="f1"  value=1 class="mcq">No
+        <input type="radio" id="f2"  value=2 class="mcq">Yes
+        <input type="radio" id="f3"  value=3 class="mcq">Maybe
+    </div>
+    <div class = "question">Do you experience persistent pain or pressure in the chest
+        <br>
+        <input type="radio" id="g1"  value=1 class="mcq">No
+        <input type="radio" id="g2"  value=2 class="mcq">Yes
+        <input type="radio" id="g3"  value=3 class="mcq">Maybe
+    </div>
+    <div class = "question">Rate the intensity of the difficulty of staying awake.
+        <br>
+        <input type="radio" id="h1"  value=1 class="mcq">Not difficult
+        <input type="radio" id="h2"  value=2 class="mcq">Moderate
+        <input type="radio" id="h2"  value=3 class="mcq">Very difficult
+    </div>
+    <button class="result" onclick="checkResult()">Check Results!</button>
+    </div>
+    <div id = "resultval">
+        <h3>YOUR RESULTS!</h3>
+        <div id="report">
+
+        </div>
+    </div>
+</div>
+</body>
+<script>
+var quiznew = document.getElementById("quiz");
+var result = document.getElementById("resultval");
+function checkResult(){
+    quiznew.style["display"] =  "none";
+    result.style["display"] =  "block";
+    var count = 0;
+    var ele = document.getElementsByTagName('input'); 
+    console.log(ele.length)
+    for(i = 0; i < ele.length; i++) {    
+        if(ele[i].type="radio") { 
+                 if(ele[i].checked) 
+                    count+=parseInt(ele[i].value);
+                    } 
+              } 
+    console.log(count);
+    var report = document.getElementById("report");
+    if (count < 16){
+        report.innerHTML= "Your results are safe as per medical standards. There is no need for worry. Take care of yourself and stay safe!";
+    }
+    else{
+        report.innerHTML= "Your results do not seem safe as per medical standards. Please make yourself available for testing at the nearest hospital available. Take care of yourself and stay safe!";  
+    } 
+}
+</script>
+</html>

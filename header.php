@@ -15,7 +15,7 @@ session_start();
 <header>
    <body>
     <div class = "content">
-       <h2>COVID-19 PRELIMINARY TESTING PORTAL</h2>
+       <h2>COVID-19 PATIENT PRELIMINARY TESTING PORTAL</h2>
         <form action = "includes/login.inc.php" method =  "post">
             <input type = "text" name = "mailuid" placeholder = "Username/Email"><br>
             <input type = "password" name = "pwd" placeholder = "Password"><br>

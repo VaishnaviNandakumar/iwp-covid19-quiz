@@ -56,5 +56,50 @@ form{
 
 .container{
     margin-left: 10%;
+    margin-top: 5%;
+
+}
+img{
+    margin-left: 65%;
     margin-top: 10%;
+    width: 35%;
+}
+
+#quiz{
+    
+    margin-top: -25%;
+    padding: 20px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 4px black;
+    width: 60%;
+    
+
+}
+.question{
+    margin-top: 4%;
+}
+
+.result{
+    width: 20%;
+    height: 30px;
+    background-color: white;
+}
+
+.mcq{
+    height: 3vh;
+    width: 5vw !important;
+    padding: 1px !important;
+    margin-top: 2%;
+    margin-left: -2%;
+}
+
+#resultval{
+    border: 2px solid red;
+    margin-left: 15%;
+    margin-top: 2%;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 2px 2px 4px black;
+    width: 60%;
+    display: none;
 }

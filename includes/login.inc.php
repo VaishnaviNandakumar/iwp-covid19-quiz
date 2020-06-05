@@ -31,7 +31,7 @@ if(isset($_POST['login-submit']))
                     session_start();
                     $_SESSION['userId'] = $row['idUsers'];
                     $_SESSION['userUid'] = $row['uidUsers'];
-                    header("Location: dashboard.php");
+                    header("Location: dashboard.html");
                     exit();
                 
             }
